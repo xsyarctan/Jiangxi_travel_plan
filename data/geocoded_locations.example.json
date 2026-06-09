@@ -1,7 +1,7 @@
 {
   "meta": {
-    "coordinate_status": "Approximate placeholder coordinates for initial map rendering only. Replace with verified AMap/Gaode or manually confirmed coordinates before treating lodging pins as exact.",
-    "todo": "TODO: geocode exact coordinates for route nodes and lodging addresses; add a private data/geocoded_locations.json if preferred."
+    "coordinate_status": "Area-level lodging pins for planning discussion. Coordinates are coarse references from OpenStreetMap/Nominatim area results plus small display offsets; verify exact hotel locations before booking/navigation.",
+    "todo": "Replace area-level lodging coordinates with exact verified coordinates if precision becomes important."
   },
   "route_sequence": [
     "shanghai_start",
@@ -86,9 +86,10 @@
       "area": "万寿宫",
       "address": "江西·南昌·东湖区·子固路12号",
       "map_query": "江西南昌东湖区子固路12号",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 28.6782912,
+      "lng": 115.8802981,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 南昌万寿宫历史文化街区；区域级参考"
     },
     {
       "city": "南昌",
@@ -96,9 +97,10 @@
       "area": "万寿宫",
       "address": "江西·南昌·西湖区·法院宿舍易家巷19号",
       "map_query": "江西南昌西湖区法院宿舍易家巷19号",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 28.6764912,
+      "lng": 115.8837981,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 南昌万寿宫历史文化街区；区域级参考"
     },
     {
       "city": "南昌",
@@ -106,9 +108,10 @@
       "area": "万寿宫",
       "address": "江西·南昌·西湖区·系马桩-228号楼",
       "map_query": "江西南昌西湖区系马桩228号楼",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 28.6747912,
+      "lng": 115.8886981,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 南昌万寿宫历史文化街区；区域级参考"
     },
     {
       "city": "南昌",
@@ -116,9 +119,10 @@
       "area": "八一广场",
       "address": "江西·南昌·西湖区·八一大道142号",
       "map_query": "江西南昌西湖区八一大道142号",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 28.6782647,
+      "lng": 115.8978939,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 南昌八一广场；区域级参考"
     },
     {
       "city": "庐山",
@@ -126,9 +130,10 @@
       "area": "牯岭镇",
       "address": "江西·九江·庐山市·牯岭镇大林路55号",
       "map_query": "江西九江庐山市牯岭镇大林路55号",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 29.572433,
+      "lng": 115.9754013,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 庐山牯岭镇；区域级参考"
     },
     {
       "city": "庐山",
@@ -136,9 +141,10 @@
       "area": "牯岭街",
       "address": "江西·九江·庐山市·环山路1号",
       "map_query": "江西九江庐山市环山路1号",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 29.571633,
+      "lng": 115.9782013,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 庐山牯岭镇/牯岭街；区域级参考"
     },
     {
       "city": "庐山",
@@ -146,9 +152,10 @@
       "area": "牯岭街",
       "address": "江西·九江·庐山市·庐山风景名胜区河西路4号",
       "map_query": "江西九江庐山风景名胜区河西路4号",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 29.570833,
+      "lng": 115.9770013,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 庐山牯岭镇/牯岭街；区域级参考"
     },
     {
       "city": "庐山",
@@ -156,9 +163,10 @@
       "area": "牯岭镇",
       "address": "江西·九江·庐山市·牯岭镇慧远路102号",
       "map_query": "江西九江庐山市牯岭镇慧远路102号",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 29.573033,
+      "lng": 115.9792013,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 庐山牯岭镇；区域级参考"
     },
     {
       "city": "景德镇",
@@ -166,9 +174,10 @@
       "area": "陶溪川",
       "address": "景德镇珠山区童街路南265号",
       "map_query": "景德镇珠山区童街路南265号",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 29.3218915,
+      "lng": 117.2260122,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 景德镇陶溪川北路周边；区域级参考"
     },
     {
       "city": "景德镇",
@@ -176,9 +185,10 @@
       "area": "陶溪川",
       "address": "景德镇珠山区童街路南98号",
       "map_query": "景德镇珠山区童街路南98号",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 29.3212915,
+      "lng": 117.2278122,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 景德镇陶溪川北路周边；区域级参考"
     },
     {
       "city": "景德镇",
@@ -186,9 +196,10 @@
       "area": "陶溪川",
       "address": "景德镇珠山区新厂西路陶公寓",
       "map_query": "景德镇珠山区新厂西路陶公寓",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 29.3232915,
+      "lng": 117.2254122,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 景德镇陶溪川北路周边；区域级参考"
     },
     {
       "city": "景德镇",
@@ -196,9 +207,10 @@
       "area": "陶溪川",
       "address": "景德镇珠山区童宾路10号",
       "map_query": "景德镇珠山区童宾路10号",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 29.3241915,
+      "lng": 117.2282122,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 景德镇陶溪川北路周边；区域级参考"
     },
     {
       "city": "三清山",
@@ -206,9 +218,10 @@
       "area": "东部金沙索道",
       "address": "上饶三清山202省道欢墅名人度假村",
       "map_query": "上饶三清山202省道欢墅名人度假村",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 28.9187027,
+      "lng": 118.0786935,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 三清山金沙索道；区域级参考"
     },
     {
       "city": "三清山",
@@ -216,9 +229,10 @@
       "area": "东部金沙索道",
       "address": "上饶三清山风景名胜区三清乡上西坑村金沙服务区5幢1-1",
       "map_query": "上饶三清山风景名胜区三清乡上西坑村金沙服务区5幢1-1",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 28.9174027,
+      "lng": 118.0804935,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 三清山金沙索道；区域级参考"
     },
     {
       "city": "三清山",
@@ -226,9 +240,10 @@
       "area": "南部外双溪索道",
       "address": "上饶三清山风景名胜区南部外双溪景区",
       "map_query": "上饶三清山风景名胜区南部外双溪景区",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 28.8817663,
+      "lng": 118.0603211,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 三清山外双溪服务区/南部索道；区域级参考"
     },
     {
       "city": "三清山",
@@ -236,9 +251,10 @@
       "area": "南部外双溪索道",
       "address": "上饶三清山枫林镇外双溪游客中心西北200米",
       "map_query": "上饶三清山枫林镇外双溪游客中心西北200米",
-      "lat": null,
-      "lng": null,
-      "coordinate_status": "TODO: geocode exact coordinates"
+      "lat": 28.8808663,
+      "lng": 118.0617211,
+      "coordinate_status": "区域级参考，非精确门牌定位",
+      "coordinate_source": "OpenStreetMap/Nominatim: 三清山外双溪服务区/南部索道；区域级参考"
     }
   ]
 }

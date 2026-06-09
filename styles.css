@@ -214,6 +214,253 @@ h3 {
   min-height: 0;
 }
 
+/* Local critical Leaflet layout CSS. This keeps the map usable if the CDN CSS is blocked. */
+.leaflet-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-container,
+.leaflet-pane > svg,
+.leaflet-pane > canvas,
+.leaflet-zoom-box,
+.leaflet-image-layer,
+.leaflet-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.leaflet-container {
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.leaflet-container img,
+.leaflet-container .leaflet-tile {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.leaflet-container .leaflet-overlay-pane svg {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  display: block;
+}
+
+.leaflet-tile {
+  visibility: hidden;
+}
+
+.leaflet-tile-loaded {
+  visibility: inherit;
+}
+
+.leaflet-pane {
+  z-index: 400;
+}
+
+.leaflet-tile-pane {
+  z-index: 200;
+}
+
+.leaflet-overlay-pane {
+  z-index: 400;
+}
+
+.leaflet-shadow-pane {
+  z-index: 500;
+}
+
+.leaflet-marker-pane {
+  z-index: 600;
+}
+
+.leaflet-tooltip-pane {
+  z-index: 650;
+}
+
+.leaflet-popup-pane {
+  z-index: 700;
+}
+
+.leaflet-map-pane canvas {
+  z-index: 100;
+}
+
+.leaflet-map-pane svg {
+  z-index: 200;
+}
+
+.leaflet-control {
+  position: relative;
+  z-index: 800;
+  pointer-events: auto;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.leaflet-top {
+  top: 0;
+}
+
+.leaflet-bottom {
+  bottom: 0;
+}
+
+.leaflet-left {
+  left: 0;
+}
+
+.leaflet-right {
+  right: 0;
+}
+
+.leaflet-control {
+  float: left;
+  clear: both;
+}
+
+.leaflet-right .leaflet-control {
+  float: right;
+}
+
+.leaflet-top .leaflet-control {
+  margin-top: 10px;
+}
+
+.leaflet-bottom .leaflet-control {
+  margin-bottom: 10px;
+}
+
+.leaflet-left .leaflet-control {
+  margin-left: 10px;
+}
+
+.leaflet-right .leaflet-control {
+  margin-right: 10px;
+}
+
+.leaflet-control-zoom a {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font: bold 18px/26px "Lucida Console", Monaco, monospace;
+}
+
+.leaflet-control-zoom a:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.leaflet-control-zoom a:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 4px 4px;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #f4f4f4;
+}
+
+.leaflet-tooltip {
+  position: absolute;
+  padding: 6px 8px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24);
+  color: #222;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.leaflet-tooltip-right::before,
+.leaflet-tooltip-left::before {
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  margin-top: -6px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  content: "";
+  pointer-events: none;
+}
+
+.leaflet-tooltip-right::before {
+  left: 0;
+  margin-left: -12px;
+  border-right: 6px solid #fff;
+}
+
+.leaflet-tooltip-left::before {
+  right: 0;
+  margin-right: -12px;
+  border-left: 6px solid #fff;
+}
+
+.leaflet-popup {
+  position: absolute;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.leaflet-popup-content-wrapper {
+  padding: 1px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.22);
+  text-align: left;
+}
+
+.leaflet-popup-content {
+  margin: 13px 19px;
+  line-height: 1.45;
+}
+
+.leaflet-popup-tip-container {
+  position: absolute;
+  left: 50%;
+  overflow: hidden;
+  width: 40px;
+  height: 20px;
+  margin-left: -20px;
+  pointer-events: none;
+}
+
+.leaflet-popup-tip {
+  width: 17px;
+  height: 17px;
+  margin: -10px auto 0;
+  padding: 1px;
+  transform: rotate(45deg);
+  background: #fff;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.22);
+}
+
+.leaflet-interactive {
+  cursor: pointer;
+}
+
 .leaflet-container {
   font: inherit;
 }
@@ -899,30 +1146,86 @@ h3 {
 
 .budget-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: minmax(14rem, 0.34fr) minmax(0, 0.66fr);
+  align-items: start;
   gap: 1rem;
   margin-top: 1.8rem;
 }
 
-.budget-card {
-  min-height: 12rem;
-  padding: 1rem;
+.budget-summary-card {
+  min-height: 14rem;
+  padding: 1.1rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.07);
 }
 
-.budget-card strong {
+.budget-summary-card span,
+.budget-summary-card strong,
+.budget-summary-card p {
   display: block;
-  margin-bottom: 0.55rem;
-  color: #fffaf2;
-  font-size: 1.15rem;
 }
 
-.budget-card p {
+.budget-summary-card span {
+  color: rgba(255, 250, 242, 0.74);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.budget-summary-card strong {
+  display: block;
+  margin: 0.45rem 0 0.7rem;
+  color: #fffaf2;
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  line-height: 0.95;
+}
+
+.budget-summary-card p {
   margin: 0;
   color: rgba(255, 250, 242, 0.76);
   line-height: 1.62;
+}
+
+.budget-table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.budget-table {
+  width: 100%;
+  min-width: 47rem;
+  border-collapse: collapse;
+}
+
+.budget-table th,
+.budget-table td {
+  padding: 0.78rem 0.82rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+  vertical-align: top;
+}
+
+.budget-table th {
+  color: #f2c777;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.budget-table td {
+  color: rgba(255, 250, 242, 0.78);
+  line-height: 1.48;
+}
+
+.budget-table td:first-child {
+  color: #fffaf2;
+  font-weight: 850;
+}
+
+.budget-table td strong {
+  color: #fffaf2;
+  white-space: nowrap;
 }
 
 .lodging-dialog {
@@ -1028,7 +1331,7 @@ h3 {
   }
 
   .budget-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1064,8 +1367,7 @@ h3 {
   .route-stats,
   .city-grid,
   .sketch-grid,
-  .lodging-grid,
-  .budget-grid {
+  .lodging-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 

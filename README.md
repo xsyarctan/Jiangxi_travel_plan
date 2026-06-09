@@ -14,7 +14,7 @@ Live site: [https://xsyarctan.github.io/Jiangxi_travel_plan/](https://xsyarctan.
 - City and resort sections for 南昌、庐山、景德镇、三清山
 - Preserved hand-drawn route sketches for 庐山 and 三清山
 - Lodging comparison cards with photos, location notes, booking links, pros, and concerns
-- A rough budget model and open decision panel
+- A per-person rough budget table and open decision panel
 
 ## Current Planning Questions
 
@@ -31,7 +31,7 @@ Key files:
 - `data/trip_plan.json` — route logic, daily plan, and city/resort play notes
 - `data/commute_options.json` — transport legs and cost assumptions
 - `data/lodging_options.json` — lodging candidates
-- `data/budget_model.json` — rough budget categories
+- `data/budget_model.json` and `data/jiangxi_budget_table.csv` — per-person rough budget table
 - `public/sketches/` — route sketches preserved from planning notes
 - `public/images/lodging/` — lodging screenshots and photos
 

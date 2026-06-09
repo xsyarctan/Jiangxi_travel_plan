@@ -13,7 +13,7 @@ const COPY = {
     三清山: "三清山住宿的核心差异是东部金沙效率与南部外双溪配套，需要结合返程压力决定。"
   },
   decisionNotes: [
-    "先定住宿组合，才能估算每人实际住宿成本。",
+    "挑选合适的住宿，平衡位置、舒适度、价格。",
     "东部金沙更利于一日游效率，南部外双溪配套可能更成熟。",
     "当天夜回上海会压缩下山和大巴时间，上饶住一晚更松。"
   ]
@@ -428,6 +428,7 @@ function renderPinList() {
           <span>${escapeHtml(item.city)} · ${escapeHtml(item.area || "区域待确认")}</span>
           <span>${escapeHtml(item.address)}</span>
           <span>${escapeHtml(item.coordinate_status || "位置待人工确认")}</span>
+          ${item.coordinate_source ? `<span>${escapeHtml(item.coordinate_source)}</span>` : ""}
         </article>
       `
     )
@@ -435,17 +436,54 @@ function renderPinList() {
 }
 
 function renderBudget() {
-  $("#budget-grid").innerHTML = state.budget.recommended_budget_model
-    .map(
-      (item) => `
-        <article class="budget-card">
-          <strong>${escapeHtml(item.category)}</strong>
-          <p>${escapeHtml(item.rough_per_person)}</p>
-          <p>${escapeHtml(item.basis)}</p>
-        </article>
-      `
-    )
-    .join("");
+  const rows =
+    state.budget.items ||
+    (state.budget.recommended_budget_model || []).map((item) => ({
+      成本项: item.category,
+      估算方式: item.basis,
+      "粗略区间 / 人": item.rough_per_person,
+      备注: ""
+    }));
+  const summary = rows.find((row) => row["成本项"] === "预算备注");
+  const detailRows = rows.filter((row) => row["成本项"] !== "预算备注");
+
+  $("#budget-grid").innerHTML = `
+    ${
+      summary
+        ? `<article class="budget-summary-card">
+            <span>${escapeHtml(summary["估算方式"])}</span>
+            <strong>${escapeHtml(summary["粗略区间 / 人"])}</strong>
+            <p>以下为按人估算的交通、住宿、门票索道与餐饮预算；实际金额以出票、订房和景区政策为准。</p>
+          </article>`
+        : ""
+    }
+    <div class="budget-table-wrap">
+      <table class="budget-table">
+        <thead>
+          <tr>
+            <th>成本项</th>
+            <th>估算方式</th>
+            <th>粗略区间 / 人</th>
+            <th>备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${detailRows
+            .map(
+              (row) => `
+                <tr>
+                  <td>${escapeHtml(row["成本项"])}</td>
+                  <td>${escapeHtml(row["估算方式"])}</td>
+                  <td><strong>${escapeHtml(row["粗略区间 / 人"])}</strong></td>
+                  <td>${escapeHtml(row["备注"] || "—")}</td>
+                </tr>
+              `
+            )
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
 }
 
 function initRouteMap() {
@@ -649,14 +687,19 @@ function initLodgingPinMap() {
       radius: 7,
       color: "#243233",
       weight: 2,
-      fillColor: "#2f5d50",
+      fillColor: item.city === "三清山" ? "#b66542" : item.city === "庐山" ? "#2f5d50" : "#2c7488",
       fillOpacity: 0.9
     })
       .addTo(map)
-      .bindPopup(`<strong>${escapeHtml(item.name)}</strong><p class="map-note">${escapeHtml(item.address)}</p>`);
+      .bindPopup(
+        `<strong>${escapeHtml(item.name)}</strong><p class="map-note">${escapeHtml(item.area)} · ${escapeHtml(
+          item.coordinate_status || "区域级参考"
+        )}</p><p class="map-note">${escapeHtml(item.address)}</p>`
+      );
   });
 
   map.fitBounds(latLngs, { padding: [30, 30] });
+  setTimeout(() => map.invalidateSize(), 200);
 }
 
 function renderPendingPinPanel() {
