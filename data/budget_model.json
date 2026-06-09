@@ -1,0 +1,69 @@
+{
+  "assumptions": {
+    "group_size": 3,
+    "notes": "Per-person lodging estimates assume 3 people sharing. Actual cost depends on final room configuration."
+  },
+  "fixed_transport_per_person_cny": {
+    "flight_shanghai_to_nanchang": 470,
+    "nanchang_to_jiujiang_or_lushan": 40,
+    "lushan_up": "75 by cableway or 90 by bus package",
+    "jiujiang_to_jingdezhen": 55,
+    "jingdezhen_to_shangrao": 65,
+    "shangrao_to_sanqingshan_bus": 60,
+    "sanqingshan_to_shangrao_bus": 60,
+    "shangrao_to_shanghai": 240
+  },
+  "lodging_option_nightly_total_cny": {
+    "南昌": {
+      "麗枫酒店（南昌滕王阁万寿宫地铁站店）": "180¥/间晚",
+      "兵哥民宿": "350¥/晚",
+      "楠方家民宿": "450¥/晚",
+      "雅斯特国际酒店（南昌八一广场滕王阁店）": "160¥/间晚"
+    },
+    "庐山": {
+      "漫步时光二部民宿": "760¥/晚",
+      "麗枫酒店（牯岭街鑫缔店）": "250¥/间晚",
+      "白玉兰商务酒店（牯岭街店）": "380¥/间晚",
+      "山月·Moon美学度假美宿": "260¥/间晚"
+    },
+    "景德镇": {
+      "巷隅苔庭·Modern设计师美学民宿": "467¥/晚",
+      "幽兰畔居美宿": "466¥/晚",
+      "陶公寓（陶溪川文创街区店）": "160¥/间晚",
+      "麗枫酒店（景德镇陶溪川店）": "645¥/晚"
+    },
+    "三清山": {
+      "曼居酒店（上饶三清山金沙索道店）": "350¥/间晚",
+      "安缦酒店（三清山东部金沙索道店）": "306¥/间晚",
+      "三清山希尔顿度假酒店": "490¥/间晚",
+      "三清山岁丰时和度假酒店": "390¥/间晚"
+    }
+  },
+  "recommended_budget_model": [
+    {
+      "category": "交通",
+      "rough_per_person": "约 990–1,005¥ + 市内打车",
+      "basis": "已填航班、高铁、大巴；庐山上山按索道/大巴不同略有变化"
+    },
+    {
+      "category": "住宿",
+      "rough_per_person": "高度取决于组合：酒店多房 vs 整套民宿/家庭房",
+      "basis": "使用 lodging_options.json 中价格，按人数分摊"
+    },
+    {
+      "category": "门票/索道/观光车",
+      "rough_per_person": "待补充",
+      "basis": "庐山、三清山门票/索道/观光车需出发前确认"
+    },
+    {
+      "category": "餐饮",
+      "rough_per_person": "待补充，可做普通/均衡/放开吃三档",
+      "basis": "6–7天"
+    },
+    {
+      "category": "机动",
+      "rough_per_person": "建议预留",
+      "basis": "雨天改计划、临时打车、行李寄存等"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "南昌": [
+    {
+      "name": "麗枫酒店（南昌滕王阁万寿宫地铁站店）",
+      "area": "万寿宫",
+      "type": "酒店",
+      "capacity": "按房间预订",
+      "price_note": "180¥/间晚",
+      "address": "江西·南昌·东湖区·子固路12号",
+      "booking_url": "http://dpurl.cn/y0S2M46z",
+      "pros": "品牌稳定性较高，地铁和市区出行方便。",
+      "concerns": "",
+      "image_refs": [
+        "IMG_7076.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce48136994ffd8a4b54fd65"
+    },
+    {
+      "name": "兵哥民宿",
+      "area": "万寿宫",
+      "type": "整套民宿",
+      "capacity": "一套三个房间",
+      "price_note": "350¥/晚",
+      "address": "江西·南昌·西湖区·法院宿舍易家巷19号",
+      "booking_url": "http://dpurl.cn/I1WN9ogz",
+      "pros": "空间较大，适合多人同行；靠近万寿宫，方便夜间吃逛。",
+      "concerns": "",
+      "image_refs": [
+        "IMG_7049.jpg",
+        "IMG_7050.jpg",
+        "IMG_7051.jpg",
+        "IMG_7052.jpg",
+        "IMG_7053.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce481e3809ae3dc142f67b5"
+    },
+    {
+      "name": "楠方家民宿",
+      "area": "万寿宫",
+      "type": "整套民宿",
+      "capacity": "一套三个房间",
+      "price_note": "450¥/晚",
+      "address": "江西·南昌·西湖区·系马桩-228号楼",
+      "booking_url": "http://dpurl.cn/e6MKPtlz",
+      "pros": "空间较大，适合多人同行；靠近万寿宫，方便夜间吃逛。",
+      "concerns": "",
+      "image_refs": [
+        "IMG_7044.jpg",
+        "IMG_7046.jpg",
+        "IMG_7047.jpg",
+        "IMG_7048.jpg",
+        "IMG_7054.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce4800ab1a9de35220f0e21"
+    },
+    {
+      "name": "雅斯特国际酒店（南昌八一广场滕王阁店）",
+      "area": "八一广场",
+      "type": "酒店",
+      "capacity": "按房间预订",
+      "price_note": "160¥/间晚",
+      "address": "江西·南昌·西湖区·八一大道142号",
+      "booking_url": "http://dpurl.cn/xhugBcFz",
+      "pros": "位置方便，价格友好。",
+      "concerns": "",
+      "image_refs": [
+        "IMG_7055.png"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce48114b984fb356b5e1dd7"
+    }
+  ],
+  "庐山": [
+    {
+      "name": "漫步时光二部民宿",
+      "area": "牯岭镇",
+      "type": "整套民宿",
+      "capacity": "包含3个房间3张大床",
+      "price_note": "760¥/晚",
+      "address": "江西·九江·庐山市·牯岭镇大林路55号",
+      "booking_url": "http://dpurl.cn/ghi3Tz1z",
+      "pros": "整套房，适合多人同行；在山上集中住宿，晚上讨论和休息更方便。",
+      "concerns": "价格较高；实际环境、位置和上下坡距离需要确认。",
+      "image_refs": [
+        "IMG_7061.jpg",
+        "IMG_7058.jpg",
+        "IMG_7060.jpg",
+        "IMG_7059.jpg",
+        "IMG_7057.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce48102a4fbffe682a39cf8"
+    },
+    {
+      "name": "麗枫酒店（牯岭街鑫缔店）",
+      "area": "牯岭街",
+      "type": "酒店",
+      "capacity": "1间大床+1间双床 / 3间大床",
+      "price_note": "250¥/间晚",
+      "address": "江西·九江·庐山市·环山路1号",
+      "booking_url": "http://dpurl.cn/DHUEXesz",
+      "pros": "品牌稳定性较好，位置可能较方便；山上两晚休息质量更有保障。",
+      "concerns": "需要确认距离观光车站和餐饮区。",
+      "image_refs": [
+        "IMG_7064.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce48193868ef2fd2ed37a5a"
+    },
+    {
+      "name": "白玉兰商务酒店（牯岭街店）",
+      "area": "牯岭街",
+      "type": "酒店",
+      "capacity": "1间大床+1间双床",
+      "price_note": "380¥/间晚",
+      "address": "江西·九江·庐山市·庐山风景名胜区河西路4号",
+      "booking_url": "http://dpurl.cn/fpzOgnoz",
+      "pros": "位置和价格相对均衡；适合希望住得稳定但不过度溢价的方案。",
+      "concerns": "价格比普通酒店高。",
+      "image_refs": [
+        "IMG_7065.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce4819ca12ac7fd880fad0a"
+    },
+    {
+      "name": "山月·Moon美学度假美宿",
+      "area": "牯岭镇",
+      "type": "美宿/民宿",
+      "capacity": "1间大床+1间双床 / 3间大床",
+      "price_note": "260¥/间晚",
+      "address": "江西·九江·庐山市·牯岭镇慧远路102号",
+      "booking_url": "http://dpurl.cn/9oxpwssz",
+      "pros": "价格可能较低，适合作为预算控制方案。",
+      "concerns": "舒适度、隔音、距离牯岭街步行便利性需要确认。",
+      "image_refs": [
+        "IMG_7063.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce48143b0c2c453b4c02209"
+    }
+  ],
+  "景德镇": [
+    {
+      "name": "巷隅苔庭·Modern设计师美学民宿",
+      "area": "陶溪川",
+      "type": "民宿",
+      "capacity": "家庭房包含2个房间3张床",
+      "price_note": "467¥/晚",
+      "address": "景德镇珠山区童街路南265号",
+      "booking_url": "http://dpurl.cn/GuqWi7Cz",
+      "pros": "",
+      "concerns": "",
+      "image_refs": [
+        "IMG_7067.png"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce481cc8157f11282d52e02"
+    },
+    {
+      "name": "幽兰畔居美宿",
+      "area": "陶溪川",
+      "type": "民宿",
+      "capacity": "家庭房包含2个房间3张床",
+      "price_note": "466¥/晚",
+      "address": "景德镇珠山区童街路南98号",
+      "booking_url": "http://dpurl.cn/y4YdwMWz",
+      "pros": "",
+      "concerns": "",
+      "image_refs": [
+        "IMG_7069.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce48008aa67de24da32c476"
+    },
+    {
+      "name": "陶公寓（陶溪川文创街区店）",
+      "area": "陶溪川",
+      "type": "公寓",
+      "capacity": "定三个房间",
+      "price_note": "160¥/间晚",
+      "address": "景德镇珠山区新厂西路陶公寓",
+      "booking_url": "http://dpurl.cn/zdAY2eKz",
+      "pros": "位置靠近陶溪川，晚上逛街和回住处方便；价格可能较低。",
+      "concerns": "",
+      "image_refs": [
+        "IMG_7066.png"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce4810d9b33dd491b5ee80a"
+    },
+    {
+      "name": "麗枫酒店（景德镇陶溪川店）",
+      "area": "陶溪川",
+      "type": "酒店",
+      "capacity": "豪华房包含2个房间，1张大床+2张单人床",
+      "price_note": "645¥/晚",
+      "address": "景德镇珠山区童宾路10号",
+      "booking_url": "http://dpurl.cn/Hd3tnEyz",
+      "pros": "",
+      "concerns": "",
+      "image_refs": [
+        "IMG_7070.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce48043bc35e7307beb94d6"
+    }
+  ],
+  "三清山": [
+    {
+      "name": "曼居酒店（上饶三清山金沙索道店）",
+      "area": "东部金沙索道",
+      "type": "酒店",
+      "capacity": "1间大床+1间双床",
+      "price_note": "350¥/间晚",
+      "address": "上饶三清山202省道欢墅名人度假村",
+      "booking_url": "http://dpurl.cn/CSeRxeJz",
+      "pros": "距离金沙索道较近，适合第二天早上快速上山。",
+      "concerns": "需要确认真实步行距离、早餐和周边餐饮。",
+      "image_refs": [
+        "IMG_7075.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce4810d8c7dcb020aaebd44"
+    },
+    {
+      "name": "安缦酒店（三清山东部金沙索道店）",
+      "area": "东部金沙索道",
+      "type": "酒店",
+      "capacity": "1间大床+1间双床",
+      "price_note": "306¥/间晚",
+      "address": "上饶三清山风景名胜区三清乡上西坑村金沙服务区5幢1-1",
+      "booking_url": "http://dpurl.cn/VwKRucEz",
+      "pros": "靠近金沙索道，第二天上山方便；适合一日游压缩交通时间。",
+      "concerns": "需要确认是否真在东部核心区域；周边餐饮和配套可能不如南部成熟。",
+      "image_refs": [
+        "IMG_7073.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce4814ea186d4a2aa3614a0"
+    },
+    {
+      "name": "三清山希尔顿度假酒店",
+      "area": "南部外双溪索道",
+      "type": "度假酒店",
+      "capacity": "1间大床+1间双床",
+      "price_note": "490¥/间晚",
+      "address": "上饶三清山风景名胜区南部外双溪景区",
+      "booking_url": "http://dpurl.cn/68FmUeWz",
+      "pros": "舒适度高，适合最后一晚充分休息；南部配套可能更成熟。",
+      "concerns": "价格明显较高；如果只住一晚且第二天一日游，性价比需要讨论。",
+      "image_refs": [
+        "IMG_7072.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce481b3a9cbd7c7fa637570"
+    },
+    {
+      "name": "三清山岁丰时和度假酒店",
+      "area": "南部外双溪索道",
+      "type": "酒店",
+      "capacity": "1间大床+1间双床",
+      "price_note": "390¥/间晚",
+      "address": "上饶三清山枫林镇外双溪游客中心西北200米",
+      "booking_url": "http://dpurl.cn/jDXQP46z",
+      "pros": "靠近外双溪游客中心，南部上山方便；配套可能比东部更成熟。",
+      "concerns": "价格和房间品质需要确认；与东部方案相比返程压力是否更小需再判断。",
+      "image_refs": [
+        "IMG_7071.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/37a582a76ce4810f88f5efa5561783f1"
+    }
+  ]
+}

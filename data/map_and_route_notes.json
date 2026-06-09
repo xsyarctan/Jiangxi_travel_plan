@@ -1,0 +1,91 @@
+{
+  "route_nodes": [
+    {
+      "name": "上海",
+      "type": "origin",
+      "map_query": "上海"
+    },
+    {
+      "name": "南昌",
+      "type": "city",
+      "map_query": "南昌 八一广场 / 万寿宫"
+    },
+    {
+      "name": "九江站",
+      "type": "transfer",
+      "map_query": "九江站"
+    },
+    {
+      "name": "庐山牯岭镇",
+      "type": "resort_base",
+      "map_query": "庐山 牯岭镇"
+    },
+    {
+      "name": "庐山含鄱口",
+      "type": "sight",
+      "map_query": "庐山 含鄱口"
+    },
+    {
+      "name": "庐山五老峰",
+      "type": "sight",
+      "map_query": "庐山 五老峰"
+    },
+    {
+      "name": "庐山三叠泉",
+      "type": "sight",
+      "map_query": "庐山 三叠泉"
+    },
+    {
+      "name": "景德镇陶溪川",
+      "type": "city_base",
+      "map_query": "景德镇 陶溪川文创街区"
+    },
+    {
+      "name": "景德镇陶阳里",
+      "type": "sight",
+      "map_query": "景德镇 陶阳里"
+    },
+    {
+      "name": "景德镇中国陶瓷博物馆",
+      "type": "sight",
+      "map_query": "景德镇 中国陶瓷博物馆"
+    },
+    {
+      "name": "上饶站",
+      "type": "transfer",
+      "map_query": "上饶站"
+    },
+    {
+      "name": "三清山金沙索道",
+      "type": "resort_entrance",
+      "map_query": "三清山 金沙索道"
+    },
+    {
+      "name": "三清山外双溪索道",
+      "type": "resort_entrance",
+      "map_query": "三清山 外双溪索道"
+    },
+    {
+      "name": "上海",
+      "type": "return",
+      "map_query": "上海"
+    }
+  ],
+  "map_implementation_notes": [
+    "Use a province-level route map for intercity movement: Shanghai → Nanchang → Jiujiang/Lushan → Jingdezhen → Shangrao/Sanqingshan → Shanghai.",
+    "Use separate resort/city focus maps for Lushan, Jingdezhen, and Sanqingshan.",
+    "For lodging cards, geocode address strings from lodging_options.json. Keep map_query/address editable in data.",
+    "If using AMap/Gaode, keep API key in .env. If using Leaflet/OpenStreetMap, avoid Chinese map tile reliability issues by testing deployment target.",
+    "Handmade route sketches should be preserved as images in /public/sketches/. If exact image files are not available, create placeholders and document expected filenames."
+  ],
+  "sketch_assets_expected": [
+    {
+      "filename": "lushan_route_sketch.png",
+      "description": "Handmade/Notion figure for 庐山路线图. Preserve in webpage; optionally recreate as GIS/interactive map overlay."
+    },
+    {
+      "filename": "sanqingshan_route_sketch.png",
+      "description": "Handmade/Notion figure for 三清山路线草图. Preserve in webpage; optionally recreate as GIS/interactive map overlay."
+    }
+  ]
+}
