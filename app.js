@@ -518,75 +518,56 @@ function initRouteMap() {
   }
 
   const map = L.map(mapEl, {
+    zoomControl: true,
     scrollWheelZoom: false,
-    zoomControl: false
+    tap: true
   });
 
-  L.control.zoom({ position: "bottomright" }).addTo(map);
   map.attributionControl.setPrefix("路线点位为行程级近似");
 
-  const amapTiles = L.tileLayer(
-    "https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}",
-    {
-      attribution: "© 高德地图",
-      maxZoom: 18,
-      subdomains: ["1", "2", "3", "4"]
-    }
-  );
-  const osmTiles = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "© OpenStreetMap",
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy; OpenStreetMap contributors",
     maxZoom: 18
-  });
-
-  let fallbackStarted = false;
-  amapTiles.on("tileerror", () => {
-    if (fallbackStarted) return;
-    fallbackStarted = true;
-    map.removeLayer(amapTiles);
-    osmTiles.addTo(map);
-  });
-  amapTiles.addTo(map);
+  }).addTo(map);
 
   const outbound = routeStops.slice(0, 6).map((stop) => [stop.lat, stop.lng]);
   const returnLeg = [routeStops[5], routeStops[4], routeStops[6]].map((stop) => [stop.lat, stop.lng]);
+  const bounds = [];
+  const markerGroup = L.featureGroup().addTo(map);
 
   L.polyline(outbound, {
-    color: "#2f5d50",
-    lineCap: "round",
-    lineJoin: "round",
-    opacity: 0.86,
-    weight: 5
-  }).addTo(map);
-
-  L.polyline(returnLeg, {
-    color: "#b66542",
-    dashArray: "10 12",
+    color: "#2563eb",
     lineCap: "round",
     lineJoin: "round",
     opacity: 0.9,
     weight: 5
   }).addTo(map);
 
+  L.polyline(returnLeg, {
+    color: "#d97706",
+    dashArray: "10 12",
+    lineCap: "round",
+    lineJoin: "round",
+    opacity: 0.86,
+    weight: 5
+  }).addTo(map);
+
   routeStops.slice(0, 6).forEach((stop, index) => {
-    L.marker([stop.lat, stop.lng], {
-      icon: L.divIcon({
-        className: "",
-        html: `
-          <div class="route-marker route-marker--${escapeHtml(stop.kind)}">
-            <span class="route-marker-number">${index + 1}</span>
-            <span class="route-marker-label">${escapeHtml(stop.name)}</span>
-          </div>
-        `,
-        iconAnchor: [18, 18],
-        iconSize: [120, 42]
-      })
-    })
-      .addTo(map)
+    const marker = L.marker([stop.lat, stop.lng], { icon: makeRouteIcon(stop.kind) })
+      .addTo(markerGroup)
       .bindPopup(
         `<strong>${escapeHtml(stop.name)}</strong><p class="map-note">${escapeHtml(stop.label)} · ${escapeHtml(
           stop.mode
         )}</p>`
-      );
+      )
+      .bindTooltip(`${index + 1}. ${stop.name}`, {
+        className: "route-tooltip",
+        direction: "right",
+        offset: [12, 0],
+        permanent: true
+      });
+    bounds.push([stop.lat, stop.lng]);
+    if (index === 5) marker.openPopup();
   });
 
   const legend = L.control({ position: "topleft" });
@@ -596,24 +577,40 @@ function initRouteMap() {
       <strong>上海 → 江西东线 → 上海</strong>
       <span><i class="legend-line legend-line--solid"></i>去程主线</span>
       <span><i class="legend-line legend-line--dash"></i>返程待确认</span>
+      <span><i class="route-dot route-dot--mountain"></i>山线 / 景区</span>
+      <span><i class="route-dot route-dot--transfer"></i>换乘点</span>
     `;
     return div;
   };
   legend.addTo(map);
 
-  const bounds = L.latLngBounds([...outbound, ...returnLeg]);
-  map.fitBounds(bounds, { padding: [30, 30] });
+  [...outbound, ...returnLeg].forEach((coord) => bounds.push(coord));
+  map.fitBounds(bounds, { padding: [34, 34] });
 
   const resizeObserver = new ResizeObserver(() => map.invalidateSize());
   resizeObserver.observe(mapEl);
-  setTimeout(() => map.invalidateSize(), 150);
+  map.whenReady(() => {
+    map.invalidateSize();
+    if (bounds.length) map.fitBounds(bounds, { padding: [34, 34] });
+  });
+  setTimeout(() => map.invalidateSize(), 250);
+}
+
+function makeRouteIcon(kind) {
+  return L.divIcon({
+    html: `<span class="route-dot route-dot--${escapeHtml(kind)}"></span>`,
+    className: "",
+    iconAnchor: [9, 9],
+    iconSize: [18, 18],
+    popupAnchor: [0, -12]
+  });
 }
 
 function renderRouteMapFallback(routeStops) {
   return `
     <div class="route-map-unavailable">
       <strong>在线地图暂时没有加载成功</strong>
-      <p>请检查 Leaflet CDN 或地图瓦片网络；页面会在网络可用时显示高德/OSM 在线底图。</p>
+      <p>请检查 Leaflet CDN 或 OSM 地图瓦片网络；页面会在网络可用时显示在线底图。</p>
       <ol>
         ${routeStops
           .slice(0, 6)

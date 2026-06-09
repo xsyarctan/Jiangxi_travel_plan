@@ -234,52 +234,44 @@ h3 {
   min-width: 5rem;
 }
 
-.route-marker {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.42rem;
-  height: 2.1rem;
-  padding: 0.22rem 0.62rem 0.22rem 0.26rem;
-  border: 1px solid rgba(36, 50, 51, 0.18);
+.route-dot {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 10px 22px rgba(36, 50, 51, 0.18);
-  white-space: nowrap;
+  background: #2563eb;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.32),
+    0 6px 14px rgba(36, 50, 51, 0.22);
 }
 
-.route-marker-number {
-  display: grid;
-  width: 1.55rem;
-  height: 1.55rem;
-  place-items: center;
-  border-radius: 999px;
-  background: var(--pine);
-  color: #fff;
+.route-dot--terminal {
+  background: #c5943d;
+}
+
+.route-dot--city {
+  background: #2563eb;
+}
+
+.route-dot--mountain {
+  background: #d94841;
+}
+
+.route-dot--transfer {
+  background: #0f766e;
+  border-radius: 4px;
+  transform: rotate(45deg);
+}
+
+.route-tooltip {
+  border: 1px solid rgba(36, 50, 51, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 8px 18px rgba(36, 50, 51, 0.14);
+  color: var(--ink);
   font-size: 0.78rem;
   font-weight: 900;
-}
-
-.route-marker-label {
-  color: var(--ink);
-  font-size: 0.82rem;
-  font-weight: 900;
-}
-
-.route-marker--terminal .route-marker-number {
-  background: var(--gold);
-}
-
-.route-marker--city .route-marker-number {
-  background: var(--lake);
-}
-
-.route-marker--mountain .route-marker-number {
-  background: var(--pine);
-}
-
-.route-marker--transfer .route-marker-number {
-  background: var(--clay);
 }
 
 .route-map-unavailable {
@@ -309,7 +301,7 @@ h3 {
 
 .route-map-legend {
   display: grid;
-  gap: 0.35rem;
+  gap: 0.38rem;
   padding: 0.7rem 0.8rem;
   border: 1px solid rgba(36, 50, 51, 0.14);
   border-radius: 8px;
@@ -340,12 +332,12 @@ h3 {
   display: inline-block;
   width: 1.85rem;
   height: 0;
-  border-top: 3px solid var(--pine);
+  border-top: 3px solid #2563eb;
 }
 
 .legend-line--dash {
   border-top-style: dashed;
-  border-top-color: var(--clay);
+  border-top-color: #d97706;
 }
 
 .route-map-fallback {
