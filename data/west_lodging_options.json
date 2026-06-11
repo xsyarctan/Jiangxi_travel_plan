@@ -1,5 +1,51 @@
 {
-  "龙虎山": [],
+  "龙虎山": [
+    {
+      "name": "鹰潭长旅沁庐大酒店",
+      "area": "鹰潭市区",
+      "type": "酒店",
+      "capacity": "按房间预订",
+      "price_note": "待确认",
+      "address": "鹰潭市区，具体门牌待确认",
+      "booking_url": "",
+      "pros": "房间面积和公共空间观感较宽敞，适合龙虎山游览结束后在市区休息和吃晚饭。",
+      "concerns": "需要确认到鹰潭站、龙虎山游客中心的实际车程，以及价格和早餐时间。",
+      "image_refs": [
+        "west_longhushan_qinlu.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/ff1ce62be90e47fa95321f0655db1d3d"
+    },
+    {
+      "name": "麗枫酒店（鹰潭站凯翔中心广场店）",
+      "area": "鹰潭站 / 凯翔中心广场",
+      "type": "酒店",
+      "capacity": "按房间预订",
+      "price_note": "待确认",
+      "address": "鹰潭站凯翔中心广场周边，具体门牌待确认",
+      "booking_url": "",
+      "pros": "名称指向鹰潭站商圈，D1抵达和D2乘车离开都更方便；品牌房型较容易预期。",
+      "concerns": "需要确认到鹰潭站的真实步行距离、景区往返交通和近期价格。",
+      "image_refs": [
+        "west_longhushan_lavande.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/ff1ce62be90e47fa95321f0655db1d3d"
+    },
+    {
+      "name": "全季酒店（鹰潭站凯翔购物广场店）",
+      "area": "鹰潭站 / 凯翔购物广场",
+      "type": "酒店",
+      "capacity": "按房间预订",
+      "price_note": "待确认",
+      "address": "鹰潭站凯翔购物广场周边，具体门牌待确认",
+      "booking_url": "",
+      "pros": "靠近鹰潭站商圈的品牌酒店候选，图片中可见双床房和较完整的休息区域。",
+      "concerns": "需要确认价格、到车站和餐饮区的实际距离，以及龙虎山往返用车。",
+      "image_refs": [
+        "west_longhushan_ji.jpg"
+      ],
+      "notion_url": "https://app.notion.com/p/ff1ce62be90e47fa95321f0655db1d3d"
+    }
+  ],
   "庐山": [],
   "武功山": [
     {

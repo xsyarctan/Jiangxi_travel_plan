@@ -61,7 +61,7 @@ const ROUTES = {
     ribbon: ["上海", "龙虎山", "庐山", "武功山", "上海"],
     cityOrder: ["龙虎山", "庐山", "武功山"],
     lodgingNarratives: {
-      龙虎山: "住宿候选尚未录入。当前计划倾向鹰潭市区，也可以继续比较景区、鹰潭站和鹰潭北站周边。",
+      龙虎山: "当前三家候选都在鹰潭市区或鹰潭站商圈，方便D1晚饭和D2继续乘车；到龙虎山景区的往返交通仍需确认。",
       庐山: "与东线共用牯岭镇和牯岭街住宿候选，山上住两晚以便按天气切换轻松版或自然风景版。",
       武功山: "优先比较游客中心或山脚住宿，重点确认早餐、上山距离和D5返程交通。"
     },
@@ -94,7 +94,7 @@ const ROUTES = {
     outbound: [0, 1, 2, 3, 4, 5],
     returnLeg: [5, 4, 6],
     mapLegend: "上海 → 江西西线 → 上海",
-    emptyLodgingAreas: ["龙虎山"]
+    emptyLodgingAreas: []
   }
 };
 
@@ -275,7 +275,7 @@ function renderDecisions() {
       note:
         decision.options.length > 0
           ? decision.options.map((option) => `${option.name}：${option.description}`).join(" ")
-          : "龙虎山住宿仍待补充；庐山沿用东线候选，武功山已有三家酒店图片可供比较。"
+          : "龙虎山、庐山和武功山均已有住宿候选；价格、精确地址和预订链接仍需在订房前补齐。"
     }));
     decisions.push({
       title: "D5返程衔接",
@@ -459,11 +459,6 @@ function renderCities() {
           </header>
           <p>${escapeHtml(section.summary)}</p>
           ${
-            section.notes?.length
-              ? `<ul class="note-list">${section.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ul>`
-              : ""
-          }
-          ${
             options.length
               ? `<div class="route-lines">${options
                   .map(
@@ -476,6 +471,11 @@ function renderCities() {
                     `
                   )
                   .join("")}</div>`
+              : ""
+          }
+          ${
+            section.notes?.length
+              ? `<ul class="note-list">${section.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ul>`
               : ""
           }
         </article>
