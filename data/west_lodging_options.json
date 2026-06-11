@@ -1,0 +1,51 @@
+{
+  "龙虎山": [],
+  "庐山": [],
+  "武功山": [
+    {
+      "name": "萍乡武功山开元名庭度假酒店",
+      "area": "武功山景区周边",
+      "type": "度假酒店",
+      "capacity": "按房间预订",
+      "price_note": "待确认",
+      "address": "武功山景区周边，具体门牌待确认",
+      "booking_url": "",
+      "pros": "度假酒店体量较大，环境和房型看起来更适合在高强度徒步前后充分休息。",
+      "concerns": "价格、到游客中心的实际距离和返程交通仍需确认。",
+      "image_refs": [
+        "west_wugongshan_kaiyuan.png"
+      ],
+      "notion_url": "https://app.notion.com/p/78687dcc87904b998a0c199035a77095"
+    },
+    {
+      "name": "麗枫酒店（萍乡武功山游客中心店）",
+      "area": "武功山游客中心",
+      "type": "酒店",
+      "capacity": "按房间预订",
+      "price_note": "待确认",
+      "address": "武功山游客中心周边，具体门牌待确认",
+      "booking_url": "",
+      "pros": "名称指向游客中心区域，品牌酒店的房型与设施相对容易预期。",
+      "concerns": "需要确认步行距离、早餐时间以及D5下山后的交通衔接。",
+      "image_refs": [
+        "west_wugongshan_lavande.png"
+      ],
+      "notion_url": "https://app.notion.com/p/78687dcc87904b998a0c199035a77095"
+    },
+    {
+      "name": "维也纳国际酒店（萍乡武功山游客中心店）",
+      "area": "武功山游客中心",
+      "type": "酒店",
+      "capacity": "按房间预订",
+      "price_note": "待确认",
+      "address": "武功山游客中心周边，具体门牌待确认",
+      "booking_url": "",
+      "pros": "靠近游客中心的品牌酒店候选，图片中可见双床与家庭房等不同房型。",
+      "concerns": "需要确认价格、实际位置和是否方便赶D5晚间高铁。",
+      "image_refs": [
+        "west_wugongshan_vienna.png"
+      ],
+      "notion_url": "https://app.notion.com/p/78687dcc87904b998a0c199035a77095"
+    }
+  ]
+}

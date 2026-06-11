@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "route_id": "west",
+    "route_name": "西线讨论版",
+    "title": "江西西线旅行计划｜龙虎山—庐山—武功山",
+    "subtitle": "上海 → 龙虎山 / 鹰潭 → 庐山 / 九江 → 武功山 / 萍乡 → 上海",
+    "notion_page_url": "https://app.notion.com/p/37c582a76ce4819c8598edc5bad3b7ec",
+    "published_site": "https://xsyarctan.github.io/Jiangxi_travel_plan/",
+    "prepared_at": "2026-06-11T06:04:37",
+    "source": "User-updated Notion page context supplied in ChatGPT."
+  },
+  "overview": {
+    "pace": [
+      {
+        "name": "龙虎山",
+        "summary": "丹霞地貌、道教文化、竹筏 / 栈道，作为第一段自然+轻徒步"
+      },
+      {
+        "name": "庐山",
+        "summary": "山上住 2 晚，兼顾西线 / 中线人文和东线自然景观"
+      },
+      {
+        "name": "武功山",
+        "summary": "草甸与高山徒步压轴，需要重点看天气和体力"
+      }
+    ],
+    "principles": [
+      "尽量避免在下雨天安排高强度爬山。",
+      "龙虎山相对轻松，庐山中等强度，武功山体力和天气风险最高。",
+      "住宿和返程安排优先保证体力恢复，不要把最后一天压得太极限。"
+    ]
+  },
+  "itinerary": [
+    {
+      "day": "D1",
+      "area": "上海 → 鹰潭 / 龙虎山",
+      "plan": "抵达鹰潭，游玩龙虎山",
+      "lodging": "鹰潭市区附近"
+    },
+    {
+      "day": "D2",
+      "area": "龙虎山 / 鹰潭 → 庐山",
+      "plan": "前往九江或庐山，上山入住牯岭镇",
+      "lodging": "庐山牯岭镇"
+    },
+    {
+      "day": "D3",
+      "area": "庐山",
+      "plan": "庐山西线 / 中线 / 东线，根据天气和体力选择",
+      "lodging": "庐山牯岭镇"
+    },
+    {
+      "day": "D4",
+      "area": "庐山 → 萍乡 / 武功山",
+      "plan": "下山后前往萍乡或武功山脚下",
+      "lodging": "武功山山脚 / 萍乡"
+    },
+    {
+      "day": "D5",
+      "area": "武功山 / 返回上海",
+      "plan": "武功山一日路线",
+      "lodging": "武功山山脚"
+    }
+  ],
+  "commute": [
+    {
+      "day": "D1",
+      "route": "上海 → 鹰潭",
+      "mode": "高铁 / 动车",
+      "preferred": "G1371",
+      "time": "7:21-10:54",
+      "cost_cny": 316
+    },
+    {
+      "day": "D2",
+      "route": "龙虎山 / 鹰潭 → 庐山",
+      "mode": "高铁 / 动车",
+      "preferred": "G2047",
+      "time": "11:07-12:35",
+      "cost_cny": 109
+    },
+    {
+      "day": "D2",
+      "route": "庐山站 → 牯岭镇",
+      "mode": "接驳车+索道",
+      "preferred": "庐山站坐大巴15min去索道",
+      "time": "",
+      "cost_cny": null
+    },
+    {
+      "day": "D4",
+      "route": "庐山 → 九江站",
+      "mode": "景区大巴",
+      "preferred": "大巴下山去九江站",
+      "time": "",
+      "cost_cny": null
+    },
+    {
+      "day": "D4",
+      "route": "九江 → 萍乡",
+      "mode": "高铁 / 动车",
+      "preferred": "G1363",
+      "time": "13:46-16:06",
+      "cost_cny": 161
+    },
+    {
+      "day": "D4",
+      "route": "萍乡 → 武功山",
+      "mode": "大巴 / 打车",
+      "preferred": "吃完晚饭打车去武功山",
+      "time": "",
+      "cost_cny": null
+    },
+    {
+      "day": "D5",
+      "route": "萍乡 → 上海",
+      "mode": "高铁 / 动车",
+      "preferred": "G220",
+      "time": "18:09-21:57",
+      "cost_cny": 468
+    }
+  ],
+  "decisions": [
+    {
+      "title": "各地住宿选择",
+      "options": []
+    },
+    {
+      "title": "武功山一日游还是两日路线",
+      "options": [
+        {
+          "name": "一日游",
+          "description": "更省时间，住宿简单，但对天气和体力要求仍然较高。"
+        },
+        {
+          "name": "两日路线 / 山上住宿",
+          "description": "更适合看日出日落和草甸，但住宿条件、天气风险和徒步强度需要认真评估。"
+        }
+      ]
+    }
+  ],
+  "scenic_sections": [
+    {
+      "id": "longhushan",
+      "title": "龙虎山部分",
+      "summary": "龙虎山相对适合作为西线第一站：强度不会像武功山那么高，又能兼顾自然景观和文化景点。",
+      "notes": [
+        "建议重点考虑象鼻山和竹筏漂流。",
+        "上清古镇、大上清宫距离较远，需要在正一观下车换乘。",
+        "上清古镇、大上清宫评价参差不齐，因此不作为当前强推荐项。"
+      ],
+      "lodging_database": "龙虎山住宿选项"
+    },
+    {
+      "id": "lushan",
+      "title": "庐山部分",
+      "summary": "庐山景区主要分为东线、西线、中线；住宿建议放在牯岭镇 / 牯岭街附近。",
+      "route_options": [
+        {
+          "name": "轻松版",
+          "route": "牯岭街 → 花径 → 锦绣谷 → 仙人洞 → 美庐 / 庐山会议旧址",
+          "description": "适合天气一般、体力保守、想把庐山作为中段休整的人。"
+        },
+        {
+          "name": "自然风景版",
+          "route": "含鄱口 → 五老峰 → 三叠泉",
+          "description": "适合天气好、大家愿意爬山、想看庐山代表性自然景观的人。"
+        }
+      ],
+      "lodging_database": "西线庐山住宿选项"
+    },
+    {
+      "id": "wugongshan",
+      "title": "武功山部分",
+      "summary": "武功山是本路线的高强度自然风景段，核心体验是高山草甸、云海、日出 / 日落，但受天气影响很大。",
+      "route_options": [
+        {
+          "name": "一日游方案",
+          "description": "早点出发爬山（9点前出发），要预留下山前往高铁站的时间。建议最后一段坐中庵索道下行，保护膝盖+节约时间。"
+        },
+        {
+          "name": "两日游方案",
+          "description": "适合想看日出日落和草甸；需要确认山上住宿条件、天气预报、徒步强度、背包和保暖装备、返程交通。"
+        }
+      ],
+      "lodging_database": "武功山住宿选项"
+    }
+  ],
+  "budget": [
+    {
+      "item": "上海 → 鹰潭",
+      "estimate_basis": "12306 实际票价",
+      "range_per_person_cny": "316",
+      "note": ""
+    },
+    {
+      "item": "鹰潭 → 庐山",
+      "estimate_basis": "12306 实际票价",
+      "range_per_person_cny": "109",
+      "note": ""
+    },
+    {
+      "item": "庐山 → 萍乡",
+      "estimate_basis": "12306 实际票价",
+      "range_per_person_cny": "161",
+      "note": ""
+    },
+    {
+      "item": "萍乡 → 上海",
+      "estimate_basis": "12306 实际票价",
+      "range_per_person_cny": "468",
+      "note": ""
+    },
+    {
+      "item": "龙虎山住宿",
+      "estimate_basis": "1晚，按人均分摊",
+      "range_per_person_cny": "170-250",
+      "note": "鹰潭市区"
+    },
+    {
+      "item": "庐山住宿",
+      "estimate_basis": "2晚，按人均分摊",
+      "range_per_person_cny": "360-520",
+      "note": "牯岭镇"
+    },
+    {
+      "item": "武功山住宿",
+      "estimate_basis": "1晚，按人均分摊",
+      "range_per_person_cny": "200-250",
+      "note": "景区附近"
+    },
+    {
+      "item": "景区门票",
+      "estimate_basis": "庐山",
+      "range_per_person_cny": "160",
+      "note": ""
+    },
+    {
+      "item": "索道",
+      "estimate_basis": "庐山上行",
+      "range_per_person_cny": "75",
+      "note": ""
+    },
+    {
+      "item": "观光车",
+      "estimate_basis": "庐山",
+      "range_per_person_cny": "90",
+      "note": ""
+    },
+    {
+      "item": "景区门票",
+      "estimate_basis": "龙虎山门票+观光车+竹筏",
+      "range_per_person_cny": "230",
+      "note": ""
+    },
+    {
+      "item": "景区门票",
+      "estimate_basis": "武功山",
+      "range_per_person_cny": "70",
+      "note": ""
+    },
+    {
+      "item": "索道",
+      "estimate_basis": "武功山中庵索道下行",
+      "range_per_person_cny": "50",
+      "note": ""
+    },
+    {
+      "item": "餐饮",
+      "estimate_basis": "5 天",
+      "range_per_person_cny": "1200-1500",
+      "note": "不确定物价，粗略估算"
+    }
+  ],
+  "budget_summary": "宽裕的计算 4-5k / 人",
+  "risks": {
+    "weather": [
+      "庐山和武功山都受天气影响较大。",
+      "如果遇到下雨、大雾、路滑，不建议强行走高强度山路。"
+    ],
+    "backup": [
+      "龙虎山：保留轻松游览，减少高强度步行",
+      "庐山：东线改中线 / 人文路线",
+      "武功山：一日游改山脚休整 / 萍乡停留 / 提前返程"
+    ],
+    "traffic": [
+      "鹰潭 / 龙虎山之间的交通",
+      "龙虎山到九江 / 庐山是否需要中转",
+      "庐山到萍乡 / 武功山的高铁和接驳",
+      "武功山下山后是否能衔接返程高铁"
+    ],
+    "physical": [
+      "真正消耗体力的是庐山东线和武功山一日或两日路线。",
+      "建议不要把每天都安排得很满。"
+    ]
+  }
+}

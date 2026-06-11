@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="江西东线旅行计划：上海、南昌、庐山、景德镇、三清山与上饶的路线、住宿、预算和待定事项。"
+      content="江西旅行计划：在东线南昌—庐山—景德镇—三清山与西线龙虎山—庐山—武功山之间比较路线、住宿、预算和风险。"
     />
-    <title>江西东线旅行计划</title>
+    <title>江西旅行计划｜东线与西线</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIINfQv8P2atT8LIqP97xmF37sA3f5EoEAw="
       crossorigin=""
     />
-    <link rel="stylesheet" href="./styles.css?v=2026-06-10-budget-pins" />
+    <link rel="stylesheet" href="./styles.css?v=2026-06-11-two-routes" />
   </head>
-  <body>
+  <body data-route="east">
     <header class="site-nav" aria-label="页面导航">
-      <a class="brand" href="#top">江西东线</a>
+      <a class="brand" href="#top">江西双线计划</a>
+      <div class="route-switcher" id="route-switcher" aria-label="选择旅行路线"></div>
       <nav class="nav-links" aria-label="主要章节">
         <a href="#timeline">日程</a>
         <a href="#cities">玩法</a>
@@ -31,21 +32,17 @@
     <main id="top">
       <section class="hero band">
         <div class="hero-copy">
-          <p class="eyebrow">6月21日 - 6月27日 · 约一周</p>
-          <h1>江西东线旅行计划</h1>
+          <div class="hero-kicker">
+            <p class="eyebrow" id="hero-eyebrow">6月21日 - 6月27日 · 约一周</p>
+            <span class="route-status" id="route-status">已基本确定</span>
+          </div>
+          <h1 id="hero-title">江西东线旅行计划</h1>
           <p class="hero-summary" id="hero-summary">
             从上海飞南昌，先上庐山，再去景德镇，最后用三清山收尾。
           </p>
-          <div class="route-ribbon" aria-label="旅行路线">
-            <span>上海</span>
-            <span>南昌</span>
-            <span>庐山</span>
-            <span>景德镇</span>
-            <span>三清山</span>
-            <span>上海</span>
-          </div>
+          <div class="route-ribbon" id="route-ribbon" aria-label="旅行路线"></div>
         </div>
-        <div class="hero-map-shell" aria-label="江西东线路线在线地图">
+        <div class="hero-map-shell" id="hero-map-shell" aria-label="江西旅行路线在线地图">
           <div id="route-map" class="route-map"></div>
           <div id="route-map-fallback" class="route-map-fallback" hidden></div>
         </div>
@@ -137,6 +134,14 @@
         </div>
       </section>
 
+      <section class="band risk-section" id="risks" aria-labelledby="risks-title" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Risk Check</p>
+          <h2 id="risks-title">出发前要盯住的风险</h2>
+        </div>
+        <div class="risk-grid" id="risk-grid"></div>
+      </section>
+
       <section class="band budget-section" id="budget" aria-labelledby="budget-title">
         <div class="section-heading">
           <p class="eyebrow">Budget</p>
@@ -156,6 +161,6 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
-    <script src="./app.js?v=2026-06-10-budget-pins" type="module"></script>
+    <script src="./app.js?v=2026-06-11-two-routes" type="module"></script>
   </body>
 </html>
